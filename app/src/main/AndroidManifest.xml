@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".BasicRulesActivity">
+        </activity>
+        <activity android:name=".LoreActivity">
+        </activity>
         <activity android:name=".AboutActivity">
         </activity>
 
