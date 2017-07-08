@@ -12,4 +12,17 @@
     <string name="about_text_view">This app is meant as a reference guide for Twilight Imperium 3rd Edition.</string>
     <string name="about_version_info_title">Version Info</string>
     <string name="about_version_info">v1.00: Basic Rules &amp; Lore</string>
+
+    <!-- Race names -->
+    <string name="letnev">The Barony of Letnev</string>
+    <string name="hacan">The Emirates of Hacan</string>
+    <string name="sol">Federation of Sol</string>
+    <string name="lizix">The L1Z1X Mindnet</string>
+    <string name="mentak">The Mentak Coalition</string>
+    <string name="naalu">The Naalu Collective</string>
+    <string name="sardakk">Sardakk N\'orr</string>
+    <string name="jolnar">The Universities of Jol-Nar</string>
+    <string name="xxcha">The Xxcha Kingdom</string>
+    <string name="yssaril">The Yssaril Tribes</string>
+
 </resources>
