@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TI3 Rules</string>
+
+    <!-- MainActivity strings -->
+    <string name="main_title">Twilight Imperium\n3rd Edition</string>
+    <string name="basic_rules">Basic Rules</string>
+    <string name="lore">Lore</string>
+    <string name="about">About</string>
+
 </resources>
