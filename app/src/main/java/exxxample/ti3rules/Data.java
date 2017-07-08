@@ -6,4 +6,18 @@ package exxxample.ti3rules;
  */
 
 public class Data extends Object {
+
+    public void Races {
+        int raceId;
+        String raceName;
+        String raceSpecialAbilities;
+        String raceSescription;
+        String raceLoreText;
+    }
+
+    public void Ships {
+        int shipId;
+        String shipName;
+        int shipFirepower;
+    }
 }
