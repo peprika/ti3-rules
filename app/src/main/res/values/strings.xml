@@ -11,5 +11,5 @@
     <string name="about_title">About This App</string>
     <string name="about_text_view">This app is meant as a reference guide for Twilight Imperium 3rd Edition.</string>
     <string name="about_version_info_title">Version Info</string>
-    <string name="about_version_info">v1.00: Basic Rules & Lore</string>
+    <string name="about_version_info">v1.00: Basic Rules &amp; Lore</string>
 </resources>
