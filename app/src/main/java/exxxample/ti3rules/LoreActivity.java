@@ -18,12 +18,17 @@ public class LoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lore);
 
-        // Create Sol Race, input the name to textview (all we need for now)
+        // Create Sol/Sardakk Races, input the name to textview (all we need for now)
         Data.Race sol = new Data.Race();
         sol.raceName = getResources().getString(R.string.sol);
+        Data.Race sardakk = new Data.Race();
+        sardakk.raceName = getResources().getString(R.string.sardakk);
 
         testTextView = (TextView)findViewById(R.id.textView);
         testTextView.setText(sol.raceName);
+
+        // Create an array of Race objects
+        Data.Race[] racesArray = new Data.Race[10];
     }
 
 }
