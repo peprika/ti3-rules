@@ -19,7 +19,6 @@ import java.util.Collections;
 
 public class LoreActivity extends Activity {
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lore);
@@ -100,6 +99,5 @@ public class LoreActivity extends Activity {
                         .show();
             }
         });
-    }
 
 }
