@@ -16,6 +16,11 @@ public class Data extends Object {
         String raceDescription;
         String raceLoreText;
 
+        // Override toString to show the race title in the LoreActivity's Listview
+        @Override
+        public String toString() {
+            return raceName;
+            }
         }
 
 
