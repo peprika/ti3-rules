@@ -27,11 +27,46 @@ public class LoreActivity extends Activity {
 
         final ListView mListView = (ListView) findViewById(R.id.list);
 
-        // Create Sol/Sardakk Races, input the name to textview (all we need for now)
+        // Let's build the races!
+        // #01: The Barony of Letnev
+        Data.Race letnev = new Data.Race();
+        letnev.raceName = getResources().getString(R.string.letnev);
+
+        // #02: The Emirates of Hacan
+        Data.Race hacan = new Data.Race();
+        letnev.raceName = getResources().getString(R.string.hacan);
+
+        // #03: Federation of Sol
         Data.Race sol = new Data.Race();
         sol.raceName = getResources().getString(R.string.sol);
+
+        // #04: The L1Z1X Mindnet
+        Data.Race lizix = new Data.Race();
+        lizix.raceName = getResources().getString(R.string.lizix);
+
+        // #05: The Mentak Coalition
+        Data.Race mentak = new Data.Race();
+        lizix.raceName = getResources().getString(R.string.mentak);
+
+        // #06: The Naalu Collective
+        Data.Race naalu = new Data.Race();
+        lizix.raceName = getResources().getString(R.string.naalu);
+
+        // #07: Sardakk N'orr
         Data.Race sardakk = new Data.Race();
         sardakk.raceName = getResources().getString(R.string.sardakk);
+
+        // #08: The Universities of Jol-Nar
+        Data.Race jolnar = new Data.Race();
+        sardakk.raceName = getResources().getString(R.string.jolnar);
+
+        // #09: The Xxcha Kingdom
+        Data.Race xxcha = new Data.Race();
+        sardakk.raceName = getResources().getString(R.string.xxcha);
+
+        // #10: The Yssaril Tribes
+        Data.Race yssaril = new Data.Race();
+        sardakk.raceName = getResources().getString(R.string.yssaril);
 
         // Create an array of Race objects
         Data.Race[] racesArray = new Data.Race[10];
