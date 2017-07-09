@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-
 /**
  * Created by Riku Pepponen on 8.7.2017.
  * (riku.pepponen@gmail.com)
