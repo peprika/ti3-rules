@@ -25,4 +25,16 @@
     <string name="xxcha">The Xxcha Kingdom</string>
     <string name="yssaril">The Yssaril Tribes</string>
 
+    <string-array name="RaceNames">
+        <item>The Barony of Letnev</item>
+        <item>The Emirates of Hacan</item>
+        <item>Federation of Sol</item>
+        <item>The L1Z1X Mindnet</item>
+        <item>The Mentak Coalition</item>
+        <item>The Naalu Collective</item>
+        <item>Sardakk N\'orr</item>
+        <item>The Universities of Jol-Nar</item>
+        <item>The Xxcha Kingdom</item>
+        <item>The Yssaril Tribes</item>
+    </string-array>
 </resources>
