@@ -77,7 +77,7 @@ public class LoreActivity extends Activity {
         yssaril.raceName = getResources().getString(R.string.yssaril);
 
         // Create an array of Race objects
-        Data.Race[] racesArray = { letnev, hacan, sol, lizix, mentak, naalu, sardakk, jolnar, xxcha, yssaril };
+        Data.Race[] racesArray = {letnev, hacan, sol, lizix, mentak, naalu, sardakk, jolnar, xxcha, yssaril};
 
         // Sort the raceArray for the listview adapter
         ArrayList<Data.Race> list;
@@ -99,5 +99,5 @@ public class LoreActivity extends Activity {
                         .show();
             }
         });
-
+    }
 }
