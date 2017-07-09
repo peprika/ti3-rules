@@ -1,22 +1,17 @@
 package exxxample.ti3rules;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 
-import static android.R.id.list;
 
 /**
  * Created by Riku Pepponen on 8.7.2017.
@@ -84,17 +79,7 @@ public class LoreActivity extends Activity {
         yssaril.raceName = getResources().getString(R.string.yssaril);
 
         // Create an array of Race objects
-        Data.Race[] racesArray = new Data.Race[10];
-            racesArray[0] = letnev;
-            racesArray[1] = hacan;
-            racesArray[2] = sol;
-            racesArray[3] = lizix;
-            racesArray[4] = mentak;
-            racesArray[5] = naalu;
-            racesArray[6] = sardakk;
-            racesArray[7] = jolnar;
-            racesArray[8] = xxcha;
-            racesArray[9] = yssaril;
+        Data.Race[] racesArray = { letnev, hacan, sol, lizix, mentak, naalu, sardakk, jolnar, xxcha, yssaril };
 
         // Sort the raceArray for the listview adapter
         ArrayList<Data.Race> list;
