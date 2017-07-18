@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+
 
 /**
  * Created by Riku Pepponen on 9.7.2017.
  * (riku.pepponen@gmail.com)
  */
 
-public class LoreListFragment extends ListFragment implements View.OnClickListener {
+public class LoreListFragment extends ListFragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
 
     // Custom adapter for ListView
     private class LoreAdapter extends ArrayAdapter<Data.Race> {
-        public LoreAdapter(ArrayList<Data.Race> races) {
+        private LoreAdapter(ArrayList<Data.Race> races) {
             super(getActivity(), 0, races);
         }
 
@@ -63,6 +63,14 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
         }
     }
 
+    // OnListItemClick
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        Data.Race race = ((LoreAdapter)getListAdapter()).getItem(position);
+        Toast.makeText(getActivity(), race.getRaceName() + " was clicked", Toast.LENGTH_LONG).show();
+    }
+
+    // Build the races
     public ArrayList<Data.Race> buildRaces() {
 
         String [] raceNames = getResources().getStringArray(R.array.RaceNames);
@@ -133,13 +141,6 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
 
         return racesArray;
     }
-
-    @Override
-    public void onClick(View v) {
-        // Something
-    }
-
-
 
 }
 
