@@ -1,21 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="#000000"
-             android:clickable="true">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
 
-    <TextView
-        android:id="@+id/lore_race_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="This should read something else"
-        android:layout_gravity="center"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="2"
+    >
 
-    <TextView
-        android:id="@+id/lore_race_text"
-        android:layout_width="match_parent"
+
+    <!-- Row 1: Title TextView -->
+    <TableRow
+        android:id="@+id/tableRow1"
         android:layout_height="wrap_content"
-        android:text="This should totally read something else"
-        android:layout_gravity="center"/>
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lore_page_race_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:text="Race Title"
+            android:gravity="center_horizontal"
+            android:padding="18dip"
+            android:background="#b0b0b0"
+            android:textColor="#000"/>
+
+    </TableRow>
+
+    <!-- Row 2: ImageView -->
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/lore_image_view"
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:layout_span="2"
+            android:gravity="center"/>
+
+    </TableRow>
+
+    <!-- Row 3: Lore text -->
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lore_text"
+            android:layout_width="wrap_content"
+            android:text="@string/lorem"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip"
+            android:gravity="center"/>
+    </TableRow>
+
+
+    <!-- Row 4: Buttons -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/lore_page_previous"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/prev"/>
+
+        <Button
+            android:id="@+id/lore_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_list"/>
+
+        <Button
+            android:id="@+id/lore_page_next"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/next"/>
+
+    </TableRow>
+
 </TableLayout>
+    </ScrollView>

@@ -13,6 +13,11 @@
     <string name="about_version_info_title">Version Info</string>
     <string name="about_version_info">v1.00: Basic Rules &amp; Lore</string>
 
+    <!-- Lore page strings -->
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="back_to_list">Back to List</string>
+
     <!-- Race names -->
     <string-array name="RaceNames">
         <item>The Barony of Letnev</item>
@@ -26,4 +31,37 @@
         <item>The Xxcha Kingdom</item>
         <item>The Yssaril Tribes</item>
     </string-array>
+
+    <!-- Lore texts -->
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor
+        diam tortor, sed imperdiet tortor lacinia vel. In sed tellus bibendum mauris porttitor
+        ultricies. In eros lacus, ullamcorper vel nunc ac, hendrerit imperdiet diam. Cras a nisi a
+        nunc imperdiet semper. Maecenas enim urna, lacinia id nisi a, sodales hendrerit justo.
+        Pellentesque at diam pharetra, rutrum dui eu, blandit justo. Ut gravida faucibus nunc vitae
+        ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n\n
+
+        Mauris at lobortis mauris. Mauris et purus ultrices, commodo lorem ac, vehicula quam.
+        Quisque auctor bibendum dui, ac interdum justo cursus vitae. Nulla sed iaculis urna, eu
+        fermentum urna. Nullam et ornare magna, quis fermentum risus. Nunc at lectus ligula.
+        Donec ligula metus, dignissim vel fermentum nec, rhoncus sit amet justo. Cras venenatis
+        porttitor tellus id ultricies. Sed id facilisis felis, et gravida purus. Pellentesque
+        dapibus scelerisque neque at sollicitudin. Aliquam eu dui tempus, viverra odio vel,
+        molestie urna. Curabitur in nisl eleifend, sodales nulla vel, cursus lacus.\n\n
+
+Cras in lobortis ipsum, vel sagittis augue. In lacinia placerat enim, in pellentesque nisl
+        pharetra in. Sed at eros eleifend dui condimentum ultricies non eget leo. Vivamus
+        consectetur, sapien venenatis vestibulum ultricies, arcu massa rhoncus dui, vel rhoncus
+        libero odio ac justo. Orci varius natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Quisque varius tincidunt dolor in dignissim. Fusce efficitur,
+        arcu ac suscipit varius, felis nibh luctus lorem, eu ullamcorper enim mi ut purus. Duis
+        at leo sed lorem tempus viverra et non justo.\n\n
+
+Suspendisse elementum ultricies ex vitae iaculis. Nunc id consectetur odio. Curabitur in erat
+        feugiat, hendrerit justo ac, rhoncus ante. Praesent ornare euismod diam quis efficitur.
+        Nunc urna magna, accumsan quis efficitur sagittis, egestas quis magna. Nunc consectetur,
+        velit eget laoreet elementum, est est tincidunt libero, quis mollis ipsum ex sed felis.
+        Mauris faucibus accumsan mi, ut tincidunt sapien finibus vel. Donec sem tortor, tempor
+        non sollicitudin non, molestie in libero. Duis vitae sagittis ipsum. Donec a orci vel
+        ligula ultrices elementum in non dolor.</string>
+
 </resources>
