@@ -7,6 +7,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+import java.util.ArrayList;
 
 /**
  * Created by Riku Pepponen on 9.7.2017.
@@ -25,19 +30,40 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
                              ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.lore_list_fragment, container, false);
 
-        // Build the races objects
-        Data.Race[] racesArray = buildRaces();
+        // Get the races
+        ArrayList<Data.Race> racesArray = buildRaces();
 
-        // ListView adapter
-        ArrayAdapter<Data.Race> adapter = new ArrayAdapter<>(getActivity(),
-                R.layout.lore_list_view_single_item2, racesArray);
-        setListAdapter(adapter);
+        // Set the listview adapter
+        LoreAdapter loreAdapter = new LoreAdapter(racesArray);
+        setListAdapter(loreAdapter);
 
         return view;
     }
 
+    // Custom adapter for ListView
+    private class LoreAdapter extends ArrayAdapter<Data.Race> {
+        public LoreAdapter(ArrayList<Data.Race> races) {
+            super(getActivity(), 0, races);
+        }
 
-    public Data.Race[] buildRaces() {
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            if (convertView == null) {
+                convertView = getActivity().getLayoutInflater()
+                        .inflate(R.layout.lore_list_view_single_item ,null);
+            }
+
+            Data.Race race = getItem(position);
+
+            TextView loreRaceTitle = (TextView)convertView.findViewById(R.id.lore_race_title);
+            loreRaceTitle.setText("Testing");
+
+            return convertView;
+        }
+    }
+
+    public ArrayList<Data.Race> buildRaces() {
 
         String [] raceNames = getResources().getStringArray(R.array.RaceNames);
 
@@ -93,7 +119,17 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
         yssaril.raceName = raceNames[9];
 
         // Create an array of Race objects
-        Data.Race[] racesArray = {letnev, hacan, sol, lizix, mentak, naalu, sardakk, jolnar, xxcha, yssaril};
+        ArrayList<Data.Race> racesArray = new ArrayList<>();
+        racesArray.add(letnev);
+        racesArray.add(hacan);
+        racesArray.add(sol);
+        racesArray.add(lizix);
+        racesArray.add(mentak);
+        racesArray.add(naalu);
+        racesArray.add(sardakk);
+        racesArray.add(jolnar);
+        racesArray.add(xxcha);
+        racesArray.add(yssaril);
 
         return racesArray;
     }

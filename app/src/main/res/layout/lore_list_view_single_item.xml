@@ -16,7 +16,7 @@
 
 
     <TextView
-        android:id="@android:id/text1"
+        android:id="@+id/lore_race_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
