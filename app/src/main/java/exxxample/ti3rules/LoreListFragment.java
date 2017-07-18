@@ -1,5 +1,8 @@
 package exxxample.ti3rules;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ListFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -67,7 +70,15 @@ public class LoreListFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         Data.Race race = ((LoreAdapter)getListAdapter()).getItem(position);
-        Toast.makeText(getActivity(), race.getRaceName() + " was clicked", Toast.LENGTH_LONG).show();
+
+        Fragment fragment2 = new LoreFragment();
+        FragmentManager fm = getActivity().getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.replace(R.id.fragment_container, fragment2, "tag");
+        ft.addToBackStack(null);
+        ft.commit();
+
+        //Toast.makeText(getActivity(), race.getRaceName() + " was clicked", Toast.LENGTH_LONG).show();
     }
 
 
