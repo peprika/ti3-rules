@@ -18,10 +18,13 @@ public class LoreActivity extends FragmentActivity {
 
         // Fragment manager
         FragmentManager fm = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
-        Fragment fragment = new LoreListFragment();
-        fragmentTransaction.add(R.id.fragment_container, fragment);
-        fragmentTransaction.commit();
+        if (fragment == null) {
+            fragment = new LoreListFragment();
+            fm.beginTransaction()
+            .add(R.id.fragment_container, fragment)
+            .commit();
+        }
     }
 }
