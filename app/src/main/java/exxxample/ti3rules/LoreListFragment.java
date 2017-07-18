@@ -57,7 +57,7 @@ public class LoreListFragment extends ListFragment implements View.OnClickListen
             Data.Race race = getItem(position);
 
             TextView loreRaceTitle = (TextView)convertView.findViewById(R.id.lore_race_title);
-            loreRaceTitle.setText("Testing");
+            loreRaceTitle.setText(race.getRaceName());
 
             return convertView;
         }
